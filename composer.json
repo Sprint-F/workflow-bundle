@@ -1,0 +1,41 @@
+{
+    "name": "sprintf/workflow-bundle",
+    "description": "Symfony Workflow Bundle by Sprint-F.RU",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": [
+        "Workflow",
+        "Actor",
+        "CQRS",
+        "Event Sourcing"
+    ],
+    "authors": [
+        {
+            "name": "Albert Stepantsev",
+            "email": "albert.stepantsev@sprintf.ru"
+        }
+    ],
+    "homepage": "https://sprintf.ru",
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+    },
+    "suggest": {
+        "ext-pdo": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SprintF\\Bundle\\Workflow\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        },
+        "sort-packages": true
+    }
+}
