@@ -4,6 +4,7 @@ namespace SprintF\Bundle\Workflow;
 
 use Doctrine\ORM\EntityManagerInterface;
 use SprintF\Bundle\Workflow\Exception\CanNotException;
+use SprintF\Bundle\Workflow\Exception\FailException;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Contracts\Service\Attribute\Required;
 
@@ -100,6 +101,7 @@ abstract class ActionAbstract
      * Основной метод действия.
      *
      * @throws CanNotException
+     * @throws FailException
      */
     public function __invoke(): ActionResult
     {
@@ -118,9 +120,12 @@ abstract class ActionAbstract
         } catch (CanNotException $e) {
             $this->cannot($e);
             throw $e;
+        } catch (FailException $e) {
+            $this->fail($e);
+            throw $e;
         } catch (\Throwable $e) {
             $this->fail($e);
-            throw new CanNotException($e->getMessage(), previous: $e);
+            throw new FailException(message: $e->getMessage(), previous: $e);
         }
     }
 
