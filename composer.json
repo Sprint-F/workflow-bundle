@@ -17,7 +17,10 @@
     ],
     "homepage": "https://sprintf.ru",
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "doctrine/collections": "*",
+        "doctrine/orm": "*",
+        "symfony/flex": "*"
     },
     "require-dev": {
     },
@@ -27,6 +30,7 @@
         "ext-pdo": "*"
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "SprintF\\Bundle\\Workflow\\": "src/"
