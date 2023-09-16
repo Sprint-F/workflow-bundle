@@ -210,7 +210,7 @@ trait ActionLogEntryTrait
     /**
      * Причина, по которой действие не было выполнено.
      */
-    #[ORM\Column(type: 'string', length: 250, nullable: true)]
+    #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     #[Admin\AdminField(label: 'Причина')]
     protected ?string $reason = null;
 
