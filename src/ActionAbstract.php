@@ -9,7 +9,7 @@ use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Contracts\Service\Attribute\Required;
 
 /**
- * Абстрактный класс "Действия" над каким-либо объектом (сущностью).
+ * Базовый класс "Действия" над каким-либо объектом (сущностью).
  */
 abstract class ActionAbstract
 {
