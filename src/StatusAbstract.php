@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Workflow;
+namespace SprintF\Bundle\Workflow;
 
 use SprintF\Bundle\Workflow\ActionLogEntryInterface;
 use SprintF\Bundle\Workflow\ActionResult;
