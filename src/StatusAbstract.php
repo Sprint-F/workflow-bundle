@@ -2,10 +2,6 @@
 
 namespace SprintF\Bundle\Workflow;
 
-use SprintF\Bundle\Workflow\ActionLogEntryInterface;
-use SprintF\Bundle\Workflow\ActionResult;
-use SprintF\Bundle\Workflow\WorkflowEntityInterface;
-
 /**
  * Базовый класс "Статуса" какого-либо объекта (сущности).
  */

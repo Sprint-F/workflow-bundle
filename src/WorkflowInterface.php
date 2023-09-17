@@ -32,4 +32,11 @@ interface WorkflowInterface
      * Информация о действии по его классу.
      */
     public function getActionInfoByClass(string $actionClass): ?ActionInfo;
+
+    /**
+     * Список статусов, входящих в данный flow.
+     *
+     * @return iterable|StatusInfo[]
+     */
+    public function getAvailableStatuses(): iterable;
 }
