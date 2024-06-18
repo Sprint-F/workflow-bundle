@@ -1,8 +1,9 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Workflow;
 
 use Doctrine\Common\Collections\Collection;
+use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
 
 trait WorkflowEntityTrait /* implements WorkflowEntityInterface */
 {
@@ -11,12 +12,12 @@ trait WorkflowEntityTrait /* implements WorkflowEntityInterface */
         return static::class;
     }
 
-    public function getEntityId(): null|int|string
+    public function getEntityId(): int|string|null
     {
         return $this->getId();
     }
 
-    public function setEntityId(null|int|string $id): self
+    public function setEntityId(int|string|null $id): self
     {
         return $this->setId($id);
     }

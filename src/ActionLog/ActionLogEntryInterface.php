@@ -1,7 +1,10 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\ActionLog;
 
+use SprintF\Bundle\Workflow\Action\ActionResult;
+use SprintF\Bundle\Workflow\Context\ContextAbstract;
+use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**

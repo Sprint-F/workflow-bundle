@@ -1,9 +1,11 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Action;
 
 /**
  * DTO с информацией о действии бизнес-процесса.
+ *
+ * @deprecated Вся информация будет в атрибуте действия AsAction
  */
 class ActionInfo
 {

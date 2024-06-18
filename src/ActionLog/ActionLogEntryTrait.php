@@ -1,11 +1,14 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\ActionLog;
 
 use App\Entity\User; // @todo: remove this
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Mapping as ORM;
 use SprintF\Bundle\Admin\Attribute as Admin;
+use SprintF\Bundle\Workflow\Action\ActionResult;
+use SprintF\Bundle\Workflow\Context\ContextAbstract;
+use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
 use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
@@ -18,6 +21,8 @@ use Symfony\Component\Serializer\Serializer;
  * Общая часть свойств и методов всех записей лога действий над разными сущностями.
  *
  * @implements  ActionLogEntryInterface
+ *
+ * @todo Некрасивая связь с админ-панелью!
  */
 trait ActionLogEntryTrait
 {

@@ -1,6 +1,9 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Workflow;
+
+use SprintF\Bundle\Workflow\Action\ActionInfo;
+use SprintF\Bundle\Workflow\Status\StatusInfo;
 
 /**
  * Общий интерфейс для всех классов, описывающих workflow.

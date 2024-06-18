@@ -1,6 +1,10 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Status;
+
+use SprintF\Bundle\Workflow\Action\ActionResult;
+use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
+use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
 
 /**
  * Базовый класс "Статуса" какого-либо объекта (сущности).

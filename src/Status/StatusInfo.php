@@ -1,9 +1,10 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Status;
 
 /**
  * DTO с информацией о статусе бизнес-процесса.
+ * @deprecated Вся информация будет в атрибуте
  */
 class StatusInfo
 {

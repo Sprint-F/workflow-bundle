@@ -7,6 +7,6 @@ class AsAction
 {
     public function __construct(
         public ?string $description = null,
-    )
-    {}
+    ) {
+    }
 }

@@ -1,10 +1,13 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Action;
 
 use Doctrine\ORM\EntityManagerInterface;
+use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
+use SprintF\Bundle\Workflow\Context\ContextAbstract;
 use SprintF\Bundle\Workflow\Exception\CanNotException;
 use SprintF\Bundle\Workflow\Exception\FailException;
+use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Contracts\Service\Attribute\Required;
 
@@ -149,7 +152,7 @@ abstract class ActionAbstract
      *
      * Мы вынуждены применять здесь прямые запросы к БД, поскольку в результате ошибки Entity Manager может быть закрыт.
      */
-    protected function close(ActionResult $result, string $reason = null): void
+    protected function close(ActionResult $result, ?string $reason = null): void
     {
         $table = $this->em->getClassMetadata(get_class($this->actionLogEntry))->table['name'];
         $idColumn = $this->em->getClassMetadata(get_class($this->actionLogEntry))->getColumnName('id');

@@ -1,8 +1,9 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Workflow;
 
 use Doctrine\Common\Collections\Collection;
+use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
 
 interface WorkflowEntityInterface
 {
@@ -21,13 +22,13 @@ interface WorkflowEntityInterface
      * Может быть строкой или числом.
      * null предусматривается на случай "новой" сущности, еще не получившей ID.
      */
-    public function getEntityId(): null|int|string;
+    public function getEntityId(): int|string|null;
 
     /**
      * Вообще говоря, этот метод не нужен. Но он требуется нам для фикса поведения Doctrine в отдельных случаях,
      * когда она присваивает идентификатор по факту не сохраненной записи...
      */
-    public function setEntityId(null|int|string $id): self;
+    public function setEntityId(int|string|null $id): self;
 
     /**
      * Класс записи в логе действий.

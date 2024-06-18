@@ -1,6 +1,8 @@
 <?php
 
-namespace SprintF\Bundle\Workflow;
+namespace SprintF\Bundle\Workflow\Workflow;
+
+use SprintF\Bundle\Workflow\Action\ActionInfo;
 
 /**
  * Базовый класс для всех классов, описывающих workflow.
