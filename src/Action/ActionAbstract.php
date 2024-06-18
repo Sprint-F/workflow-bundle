@@ -5,9 +5,9 @@ namespace SprintF\Bundle\Workflow\Action;
 use Doctrine\ORM\EntityManagerInterface;
 use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
 use SprintF\Bundle\Workflow\Context\ContextAbstract;
+use SprintF\Bundle\Workflow\Entity\WorkflowEntityInterface;
 use SprintF\Bundle\Workflow\Exception\CanNotException;
 use SprintF\Bundle\Workflow\Exception\FailException;
-use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Contracts\Service\Attribute\Required;
 

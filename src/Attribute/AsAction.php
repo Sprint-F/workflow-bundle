@@ -6,6 +6,7 @@ namespace SprintF\Bundle\Workflow\Attribute;
 class AsAction
 {
     public function __construct(
+        public string $flow,
         public ?string $description = null,
     ) {
     }

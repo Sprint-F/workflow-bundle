@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 use SprintF\Bundle\Admin\Attribute as Admin;
 use SprintF\Bundle\Workflow\Action\ActionResult;
 use SprintF\Bundle\Workflow\Context\ContextAbstract;
-use SprintF\Bundle\Workflow\Workflow\WorkflowEntityInterface;
+use SprintF\Bundle\Workflow\Entity\WorkflowEntityInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
 use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;

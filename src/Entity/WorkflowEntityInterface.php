@@ -1,9 +1,10 @@
 <?php
 
-namespace SprintF\Bundle\Workflow\Workflow;
+namespace SprintF\Bundle\Workflow\Entity;
 
 use Doctrine\Common\Collections\Collection;
 use SprintF\Bundle\Workflow\ActionLog\ActionLogEntryInterface;
+use SprintF\Bundle\Workflow\Workflow\WorkflowInterface;
 
 interface WorkflowEntityInterface
 {
