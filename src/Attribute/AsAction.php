@@ -1,6 +1,6 @@
 <?php
 
-namespace SprintF\Bundle\Workflow\Action;
+namespace SprintF\Bundle\Workflow\Attribute;
 
 #[\Attribute(\Attribute::TARGET_CLASS)]
 class AsAction
