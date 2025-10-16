@@ -34,18 +34,14 @@ interface WorkflowEntityInterface
     /**
      * Класс записи в логе действий.
      *
-     * @template TActionLogEntry
-     *
-     * @return class-string<TActionLogEntry>
+     * @return class-string
      */
     public static function getActionLogEntryClass(): string;
 
     /**
      * Коллекция записей лога действий данной сущности.
      *
-     * @template TActionLogEntry
-     *
-     * @return Collection|TActionLogEntry[]
+     * @return Collection
      */
     public function getActionLogEntries(): Collection;
 
