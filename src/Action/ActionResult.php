@@ -2,14 +2,12 @@
 
 namespace SprintF\Bundle\Workflow\Action;
 
-use SprintF\Bundle\Admin\Enum\EnumWithLabelInterface;
+use SprintF\ValueObjects\Enum\LabeledEnum;
 
 /**
  * Результат выполнения действия бизнес-процесса.
- *
- * @todo: Разорвать циклическую связь с админ-панелью!
  */
-enum ActionResult: string implements EnumWithLabelInterface
+enum ActionResult: string implements LabeledEnum
 {
     case CANNOT = 'cannot';
     case PROGRESS = 'progress';

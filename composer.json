@@ -22,6 +22,7 @@
         "symfony/dependency-injection": "*",
         "doctrine/collections": "*",
         "doctrine/orm": "*",
+        "sprintf/value-objects": "*",
         "symfony/flex": "*"
     },
     "require-dev": {
